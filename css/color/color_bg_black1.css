@@ -1,0 +1,91 @@
+
+
+
+/*******************
+Reversal Color_bg_black1 Start
+******************************/
+	body{
+		background-color:#020402;
+	}
+	.navbar-static-top {		
+		background-color:#020402;	
+	}
+	.portfolio-wrapper {
+		background-color: #020402;
+	}
+	.slider-main-home > .bannercontainer {
+		background-color: #020402!important;
+	}
+	.section-price-table {
+		background-color: #020402!important;
+	}
+	.section-more-feathurs .feathurs-part h3{			
+		color: gray;		
+	}
+/*******************
+Reversal Color_bg_black1 End
+******************************/
+
+
+
+
+.section-more-feathurs {
+	position: relative;
+	background: #020402;
+	margin-top: 0px;
+}
+.section-services  {
+	position: relative;
+	background: #020402;	
+}
+.section-feathurs-work   {
+	position: relative;
+	background: #020402;	
+}
+.section-our-team   {
+	position: relative;
+	background: #020402;	
+}
+.section-our-capabilities   {
+	position: relative;
+	background: #020402;	
+}
+.section-recent-post    {
+	position: relative;
+	background: #020402;	
+}
+.section-price-table     {
+	position: relative;
+	background: #020402;	
+}
+.section-contact-us      {
+	position: relative;
+	background: #020402;	
+}
+.section-footer-copyright       {
+	position: relative;
+	
+}
+.section-choose-network p.text11{
+	color: #fff;
+}
+.section-choose-network p.text12{
+	color: #fff;
+}
+.section-choose-network .choose-button {
+	border: 1px solid #fff;	
+	color: #fff;
+	
+}
+.section-choose-network h2 {
+	color: #fff;
+}
+.section-choose-network .social-icon ul li a {
+	color: #fff;
+}
+.section-choose-network .social-icon ul li {	
+	background-image: url('../../assets/images/six_angel_img11.png');	
+}
+.section-choose-network .social-icon ul li:hover {	
+	background-image: url('../../assets/images/six_angel_img6.png');	
+}
