@@ -141,9 +141,11 @@
 		
 		handleClick: function(e) {
 			var self = this;
-			var $link = $(e.currentsTarget);
+			var $link = $(e.currentTarget);
+      console.log("link to "+ $link.attr('href').split('#')[1])
 			var $parent = $link.parent();
 			var newLoc = '#' + self.getHash($link);
+      console.log("newLoc "+ newLoc)
 			
 			if(!$parent.hasClass(self.config.currentsClass)) {
 				//Start callback
@@ -156,29 +158,40 @@
 				
 				//Removing the auto-adjust on scroll
 				self.unbindInterval();
+        
+        $(document).on('ready page:load', function() {
+          if (newLoc.length > 0) {
+            return $('#nav li').on('click', function(e) {
+              e.preventDefault();
+              return $('html, body').animate({
+                'scrollTop': $newLoc.offset().top
+              }, 500);
+            });
+          }
+        });
 				
 				//Scroll to the correct position
-				$.scrollTo(newLoc, self.config.scrollSpeed, {
-					axis: 'y',
-					easing: self.config.easing,
-					offset: {
-						top: -self.config.scrollOffset
-					},
-					onAfter: function() {
-						//Do we need to change the hash?
-						if(self.config.changeHash) {
-							window.location.hash = newLoc;
-						}
-						
-						//Add the auto-adjust on scroll back in
-						self.bindInterval();
-						
-						//End callback
-						if(self.config.end) {
-							self.config.end();
-						}
-					}
-				});
+				// $.scrollTo(newLoc, self.config.scrollSpeed, {
+//           axis: 'y',
+//           easing: self.config.easing,
+//           offset: {
+//             top: -self.config.scrollOffset
+//           },
+//           onAfter: function() {
+//             //Do we need to change the hash?
+//             if(self.config.changeHash) {
+//               window.location.hash = newLoc;
+//             }
+//
+//             //Add the auto-adjust on scroll back in
+//             self.bindInterval();
+//
+//             //End callback
+//             if(self.config.end) {
+//               self.config.end();
+//             }
+//           }
+//         });
 			}
 
 			e.preventDefault();

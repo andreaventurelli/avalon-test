@@ -475,7 +475,8 @@
 
 	<script type="text/javascript">
 	  $("#nav").on("click", "li", function () {
-        $(".navbar-toggle").click();
+        $(".navbar-collapse").removeClass("in")
+        $(".navbar-collapse").addClass("collapse")
       });
     </script>	
 	
