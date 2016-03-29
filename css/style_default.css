@@ -1214,6 +1214,7 @@ Reversal Font End
 @media (min-width:768px) and (max-width:1023px){
 
 /* MODIFICHE FATTE QUI */
+  
 	.link-gallery {
 	padding-bottom: 70px!important;
 	}
@@ -1718,6 +1719,20 @@ margin:0 auto;
 		left: 366px!important;
 	}
 
+}
+
+@media (max-width:768px){
+
+/* MODIFICHE FATTE QUI */
+  .navbar-header{
+    width: 100% !important;
+  }
+  .navbar-brand{
+    margin-left: 10px !important;
+  }
+  .navbar-toggle {
+    margin-right: 0px !important;
+  }
 }
 	
 @media (min-width:900px){
