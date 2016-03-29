@@ -1,0 +1,27 @@
+
+
+
+/*******************
+Reversal Color_bg_black Start
+******************************/
+	body{
+		background-color:#020402;
+	}
+	.navbar-static-top {		
+		background-color:#020402;	
+	}
+	.portfolio-wrapper {
+		background-color: #020402;
+	}
+	.slider-main-home > .bannercontainer {
+		background-color: #020402!important;
+	}
+	.section-price-table {
+		background-color: #020402!important;
+	}
+	.section-more-feathurs .feathurs-part h3{			
+		color: gray;		
+	}
+/*******************
+Reversal Color_bg_black End
+******************************/
